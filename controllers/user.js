@@ -45,3 +45,7 @@ export const signup = async (req, res) => {
         res.status(500).json({message: `Error received axios ${error}`});
     }
 }
+
+export const home = (req, res) => {
+    res.status(200).json({message: 'welcom to login service api'})
+}
